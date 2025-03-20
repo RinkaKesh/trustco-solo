@@ -791,3 +791,94 @@ main {
     }
     
 }
+/* ................................................................................................... */
+/* benefits section  */
+.beneficial-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 100px 150px;
+    gap: 64px;
+}
+
+.beneficial-box1 {
+    width: 17%;
+    min-width: 256px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.beneficial-box1-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1%;
+}
+
+.beneficial-box1-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.beneficial-box1 button {
+    padding: 10px 24px;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    font-weight: 400;
+    width: 48%;
+    min-width: 120px;
+    height: auto;
+    min-height: 40px;
+    color: var(--quaternary-color);
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+    text-align: center;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficial-box2 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.beneficial-box2>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background-color: var(--primary-bg);
+    padding: 32px 24px;
+    border-radius: 16px;
+    
+}
+
+.beneficial-box2>div h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+
+}
+
+.beneficial-box2>div p {
+    margin-top: 10px;
+    color: var(--tertiary-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
