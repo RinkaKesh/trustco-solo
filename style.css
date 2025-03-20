@@ -959,3 +959,125 @@ main {
         line-height: 24px;
     }
 }
+
+/* .................................................................................  */
+/* Building Bridges section */
+.building-bridge-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+    background-color: var(--quaternary-color);
+    gap: 77px;
+}
+.image-section {
+    flex: 1;
+    position: relative;
+    max-width: 50%;
+    display: flex;
+    order: 1;
+}
+.image-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+.award-badge {
+    position: absolute;
+    bottom: 10%;
+    right: -15%;
+    width: 32%;
+    max-width: 200px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--quaternary-color);;
+    text-align: center;
+    /* optional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border: 4px solid var(--quaternary-color);
+    aspect-ratio: 1 / 1;
+    padding: 0;
+}
+
+.badge-img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.award-badge span {
+    font-size: clamp(16px, 3vw, 36px);
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.award-badge p {
+    font-size: clamp(8px, 1.5vw, 12px);
+    margin: 0;
+    max-width: 80%;
+    line-height: 1.2;
+    color: var(--quaternary-color);
+}
+
+.text-section {
+    flex: 1;
+    padding-left: 77px;
+    order: 2
+}
+
+.text-section h3 {
+    font-size: clamp(32px, 4vw, 60px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.text-section h3 span {
+    color: var(--senary-color);
+}
+
+.text-section p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.view-button {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    padding: 16px 16px 16px 24px;
+    border: none;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.view-button:hover{
+    background-color: var(--hover-color);
+}
+.view-button p {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--quaternary-color)
+}
+.view-button div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-button div img {
+    width: 100%;
+    height: 100%;
+}
+
