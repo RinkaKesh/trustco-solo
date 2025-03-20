@@ -1301,3 +1301,106 @@ main {
         margin-bottom: 20px;
     }
 }
+
+/* ..........................................................................................  */
+/* meet our founder section  */
+.founder-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 100px 150px;
+    width: 100%;
+    height: 774px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.founder-container>div:first-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+
+}
+
+.founder-container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--primary-color);
+}
+
+.founder-container-text-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+
+}
+
+.founder-container-text-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.founder-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.founder-desc {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--tertiary-color);
+
+}
+
+.founder-button {
+    width: 65%;
+    min-width: 336px;
+    max-width: 372px;
+    background-color: var(--secondary-color);
+    border-radius: 55px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.founder-button p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin: 0;
+    padding: 0;
+    color: var(--quaternary-color);
+
+}
+
+.img-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 574px;
+}
+
+.founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
