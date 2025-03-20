@@ -1967,3 +1967,78 @@ main {
     object-fit: contain;
     object-position: center;
 }
+
+/* responsiveness for CTA banner section  */
+@media (max-width: 1024px) {
+    .cta-banner-content {
+        width: 50%;
+        margin-left: 50px;
+        padding: 60px 0;
+    }
+
+    .cta-banner-title {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .cta-banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cta-banner-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .cta-banner-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .trial-button {
+        margin: 0 auto 20px;
+    }
+
+    .cta-banner-image-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: auto;
+        top: auto;
+    }
+
+    .cta-banner-image {
+        object-fit: contain;
+    }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+    .cta-banner-content {
+        padding: 30px 15px;
+    }
+
+    .cta-banner-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .trial-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .no-credit {
+        font-size: 0.8rem;
+    }
+
+    .cta-banner-image-container {
+        height: 250px;
+    }
+}
