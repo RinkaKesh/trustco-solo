@@ -1,0 +1,75 @@
+/* Base Styles */
+:root {
+    /* Colors */
+    --primary-color: #12141D;
+    --secondary-color: #043A53;
+    --tertiary-color: #404040;
+    --quaternary-color: #fff;
+    --quinary-color: #000000;
+    --senary-color: #92A7B0;
+    --septenary-color: #000000;
+
+    /* neutral-color */
+    --primary-bg: #F2F5F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* fallback fontfamily sans-serif  */
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--quaternary-color);
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: var(--primary-bg);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 98px;
+
+}
+/* main section style  */
+main {
+    margin-top: 98px;
+    width: 100%;
+}
