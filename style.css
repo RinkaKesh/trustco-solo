@@ -363,3 +363,32 @@ main {
         margin: 10px 0;
     }
 }
+
+
+/* .....................................................................................................................  */
+/* Trusted by brands section  */
+.trusted-by {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    padding: 50px 150px;
+
+}
+
+.trusted-by p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
