@@ -1726,7 +1726,7 @@ main {
 }
 
 .blog-container-title span {
-    color: #043A53;
+    color: var(--secondary-color);
 }
 
 .blog-container-title a {
@@ -1756,7 +1756,7 @@ main {
 .card {
     flex: 1;
     min-width: 300px;
-    background-color: white;
+    background-color:var(--quaternary-color);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--primary-bg);
@@ -1822,7 +1822,6 @@ main {
     letter-spacing: 0%;
     color: #12141D;
 }
-
 .card-link svg {
     margin-left: 9px;
 }
