@@ -752,16 +752,18 @@ main {
     }
 }
 
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
     .video-text-container div:first-child h1 {
         font-size: 2rem;
         line-height: 40px;
     }
+
     .video-section {
         margin-top: 0px;
         padding: 50px 40px 0px 40px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .video-section {
         padding: 50px 20px 0px 20px;
@@ -789,8 +791,9 @@ main {
         max-width: 14px;
         max-height: 14px;
     }
-    
+
 }
+
 /* ................................................................................................... */
 /* benefits section  */
 .beneficial-container {
@@ -863,7 +866,7 @@ main {
     background-color: var(--primary-bg);
     padding: 32px 24px;
     border-radius: 16px;
-    
+
 }
 
 .beneficial-box2>div h4 {
@@ -881,4 +884,78 @@ main {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0%;
+}
+
+/* benefits section's responsiveness for various screen sizes  */
+@media (max-width: 1024px) {
+    .beneficial-container {
+        padding: 60px 80px;
+        gap: 40px;
+    }
+
+    .beneficial-box1 {
+        width: 100%;
+        min-width: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .beneficial-box1-title {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .beneficial-box2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .beneficial-box2>div {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .beneficial-container {
+        padding: 40px 20px;
+        gap: 32px;
+    }
+
+    .beneficial-box1 {
+        gap: 20px;
+    }
+
+    .beneficial-box1-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .beneficial-box1-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .beneficial-box1 button {
+        width: auto;
+    }
+
+    .beneficial-box2 {
+        gap: 24px;
+    }
+
+    .beneficial-box2>div {
+        padding: 24px 16px;
+    }
+
+    .beneficial-box2>div h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .beneficial-box2>div p {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
