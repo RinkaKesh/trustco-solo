@@ -8,9 +8,9 @@
     --quinary-color: #000000;
     --senary-color: #92A7B0;
     --septenary-color: #000000;
-
-    /* neutral-color */
-    --primary-bg: #F2F5F6;
+    --hover-color: #035a73;
+        /* neutral-color */
+        --primary-bg: #F2F5F6;
 }
 
 * {
@@ -68,8 +68,125 @@ header {
     height: 98px;
 
 }
+
 /* main section style  */
 main {
     margin-top: 98px;
     width: 100%;
+}
+
+
+/* hero section */
+.hero-container {
+    width: 100%;
+    background-color: var(--primary-bg);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 100px 150px;
+    width: 100%;
+    gap: 20px;
+}
+
+.hero-image {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    flex: 0 0 60%;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.hero-content h1 .company-name {
+    color: var(--secondary-color);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero-buttons button {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons button:first-child {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    border-radius: 55px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero-buttons button:first-child:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.hero-buttons button:first-child:active {
+    background-color: #033b4b;
+    transform: scale(0.98);
+}
+
+.video-button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    border-radius: 55px;
+}
+
+.video-button:hover {
+    background-color: rgba(4, 58, 83, 0.1);
+    transform: scale(1.05);
+}
+
+.video-button:active {
+    background-color: rgba(4, 58, 83, 0.2);
+    transform: scale(0.98);
+}
+
+.video-button-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
 }
