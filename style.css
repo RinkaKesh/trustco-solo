@@ -721,5 +721,73 @@ main {
     height: auto;
     max-width: 20px;
     max-height: 20px;
+}
 
+/* video section's responsiveness for various screen sizes  */
+
+@media screen and (max-width: 1024px) {
+
+    .video-text-container {
+        flex-direction: column;
+    }
+
+    .video-text-container div:first-child h1 {
+        font-size: 2.5rem;
+        line-height: 48px;
+    }
+
+    .video-text-container div:last-child {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .video-text-container div:last-child p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .video-section {
+        margin-top: 0px;
+        padding: 40px 40px 0px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {  
+    .video-text-container div:first-child h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .video-section {
+        margin-top: 0px;
+        padding: 50px 40px 0px 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .video-section {
+        padding: 50px 20px 0px 20px;
+    }
+
+    .video-text-container {
+        margin-bottom: 30px;
+    }
+
+    .video-text-container div:first-child h1 {
+        font-size: 1.875rem;
+        line-height: 36px;
+    }
+
+    .video-text-container div:last-child p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .video_image {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .play-button img {
+        max-width: 14px;
+        max-height: 14px;
+    }
+    
 }
