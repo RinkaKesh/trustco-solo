@@ -2121,3 +2121,76 @@ main {
     color: var(--hover-color);
 }
 
+@media (max-width: 1200px){
+    .footer-content{
+        padding: 80px 100px;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .footer-content {
+        padding: 60px 50px;
+        gap: 50px;
+    }
+
+    .company-desc {
+        max-width: 350px;
+    }
+
+    .top-columns {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 32px;
+    }
+
+    .footer-logo-section {
+        align-items: center;
+
+    }
+
+    .company-desc {
+        width: 100%;
+        max-width: none;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .top-columns {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+
+    .footer-column {
+        width: auto;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .top-columns {
+        gap: 30px;
+    }
+    .footer-column h3 {
+        margin-bottom: 10px;
+    }
+}
+
