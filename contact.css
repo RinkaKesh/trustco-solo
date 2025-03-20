@@ -1,4 +1,3 @@
-
 .contact-main-section1 {
     /* max-width: 1200px; */
     margin: 0 auto;
@@ -44,6 +43,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
 .icon-container {
     width: 64px;
     height: 64px;
@@ -79,6 +79,7 @@
     margin-top: auto;
     letter-spacing: 0%;
 }
+
 .btn img {
     margin-left: 10px;
 }
@@ -88,12 +89,14 @@
 .message-section {
     padding: 100px 120px;
 }
+
 .form-container {
     /* max-width: 800px; */
     margin: 30px auto;
     padding: 0px 84px;
-    background-color:var(--quaternary-color);
+    background-color: var(--quaternary-color);
 }
+
 .message-section h2 {
     margin-bottom: 16px;
     font-weight: 800;
@@ -103,8 +106,9 @@
     text-align: center;
 
 }
+
 .message-section p {
-    color:var(--primary-color);
+    color: var(--primary-color);
     margin-bottom: 32px;
     max-width: 600px;
     margin-left: auto;
@@ -188,15 +192,16 @@ textarea::placeholder {
     line-height: 100%;
     letter-spacing: 0%;
 }
-.checkbox-container{
-margin-top: 32px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+
+.checkbox-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .checkbox-group {
-    flex:1;
+    flex: 1;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -211,7 +216,7 @@ align-items: center;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color:var(--quaternary-color);
+    background-color: var(--quaternary-color);
     position: relative;
     cursor: pointer;
     outline: none;
@@ -226,7 +231,7 @@ align-items: center;
 .checkbox-group input:checked::after {
     content: "✔";
     font-size: 16px;
-    color:var(--quinary-color);
+    color: var(--quinary-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -236,16 +241,18 @@ align-items: center;
 
 .checkbox-group label {
     font-size: 14px;
-    color:var(--primary-color);
+    color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
 }
+
 .checkbox-group a {
     color: var(--secondary-color);
     font-weight: 600;
 }
+
 .submit-button {
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     border-radius: 20px;
@@ -256,7 +263,135 @@ align-items: center;
     /* margin-left: auto; */
     transition: background-color 0.3s;
 }
+
 .submit-button:hover {
-    background-color:var(--hover-color);
+    background-color: var(--hover-color);
 }
 
+
+/* Media query for breakpoint 1024px*/
+@media (max-width: 1024px) {
+
+    /* Contact Section */
+    .contact-main-section1 {
+        padding: 60px 40px;
+    }
+
+    .contact-header h1 {
+        font-size: 40px;
+    }
+
+    .contact-header p {
+        font-size: 18px;
+    }
+
+    .contact-options {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .option {
+        width: 30%;
+    }
+
+    /* Message Section */
+    .message-section {
+        padding: 60px 40px;
+    }
+
+    .message-section h2 {
+        font-size: 40px;
+    }
+
+    .message-section p {
+        font-size: 18px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .checkbox-container {
+        flex-direction: row;
+    }
+
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    /* contact section  */
+    .contact-main-section1 {
+        padding: 40px 20px;
+    }
+
+    .contact-header h1 {
+        font-size: 32px;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+    }
+
+    .contact-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .option {
+        width: 100%;
+    }
+
+    /* message section-form section */
+    .message-section {
+        padding: 40px 20px;
+    }
+
+    .message-section h2 {
+        font-size: 32px;
+    }
+
+    .message-section p {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .message-section p {
+        margin-bottom: 32px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .message-section {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .checkbox-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
