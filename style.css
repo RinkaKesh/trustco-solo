@@ -69,13 +69,23 @@ header {
 
 }
 
+/* ..................................................................................................................... */
 /* main section style  */
 main {
     margin-top: 98px;
     width: 100%;
 }
+/* responsive style for smaller screen  */
+@media screen and (max-width: 900px) {
+
+    main {
+        margin-top: 72px;
+        width: 100%;
+    }
+}
 
 
+/* .................................................................................................................. */
 /* hero section */
 .hero-container {
     width: 100%;
@@ -189,4 +199,167 @@ main {
     border-radius: 50%;
     background-color: var(--secondary-color);
     color: var(--quaternary-color);
+}
+
+/* responsive layout for screen sizes between 1380px and 1200px  */
+@media screen and (max-width: 1380px) {
+    .hero-container {
+        padding: 40px 10%;
+    }
+
+    .hero {
+        padding: 80px 10%;
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: 0 0 25%;
+    }
+
+    .hero-content {
+        flex: 0 0 55%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    .hero-buttons {
+        margin-top: 40px;
+    }
+
+    .hero-buttons button {
+        font-size: 18px;
+    }
+}
+
+/* responsive layout for screen sizes between 900px and 1200px*/
+@media screen and (max-width: 1200px) {
+    .hero-container {
+        padding: 30px 6%;
+    }
+
+    .hero {
+        padding: 60px 6%;
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: 0 0 30%; 
+    }
+
+    .hero-content {
+        flex: 0 0 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem; 
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .hero-buttons {
+        margin-top: 30px;
+    }
+
+    .hero-buttons button {
+        font-size: 17px;
+    }
+}
+
+/* responsive layout for screen sizes between 900px to 768px */
+@media screen and (max-width: 900px) {
+    .hero-container {
+        padding: 30px 4%;
+    }
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 4%;
+        justify-content: center;
+    }
+    .hero-content {
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .hero-image {
+        flex: 0 0 45%;
+        order: 2;
+        max-width: 200px;
+        margin: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+}
+/* responsive layout for screen sizes between 768px and 480px  */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero {
+        padding: 30px 3%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        flex: 0 0 40%;
+        margin: 10px 0;
+    }
+}
+/* responsive layout for screen sizes below 480px  */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-buttons button:first-child,
+    .video-button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .video-button-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-image {
+        flex: 0 0 40%;
+        margin: 10px 0;
+    }
 }
