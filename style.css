@@ -1403,4 +1403,102 @@ main {
     object-fit: cover;
 
 }
+/* responsiveness for founder section  */
+@media (max-width: 1024px) {
+    .founder-container {
+        flex-direction: column;
+        padding: 50px 20px;
+        height: auto;
+    }
 
+    .founder-container>div {
+        width: 100%;
+    }
+
+    .founder-container>div:first-child {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .img-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .founder-button {
+        width: 100%;
+    }
+
+    .founder-img {
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .founder-container {
+        padding: 50px 20px;
+    }
+
+    .founder-container-text-title {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .founder-container-text-description {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .founder-name {
+        font-size: 18px;
+    }
+
+    .founder-desc {
+        font-size: 14px;
+    }
+
+    .founder-img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .founder-button {
+        width: 100%;
+        max-width: 320px;
+        min-width: auto;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .founder-container-text-title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .founder-container-text-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .founder-name {
+        font-size: 16px;
+    }
+
+    .founder-desc {
+        font-size: 12px;
+    }
+}
