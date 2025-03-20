@@ -1253,3 +1253,51 @@ main {
 .stats div:first-child p:last-child {
     color: #1E1E1E;
 }
+
+/* media queries for number section */
+@media (max-width: 1170px) {
+    .stats {
+        padding: 80px 100px;
+    }
+
+    .stat-box {
+        flex: 1 1 180px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .stats {
+        padding: 60px 80px;
+        justify-content: space-around;
+    }
+
+    .stat-box {
+        flex: 0 0 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        padding: 50px 20px;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .stat-box {
+        flex: 0 0 45%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .stats {
+        padding: 30px 3%;
+    }
+
+    .stat-box {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
