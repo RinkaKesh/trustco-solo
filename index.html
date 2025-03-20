@@ -15,24 +15,48 @@
             <!-- navbar  -->
             <nav>
                 <div class="logo">
-                    <img src="assets/Logo.svg" alt="Company Logo">
+                    <img src="assets/Logo.svg" alt="Logo">
                 </div>
-
-                <!-- Hamburger Menu Button -->
-                <div class="hamburger">
-                    <img src="assets/Layer 2.svg" alt="hamburger_menu">
-                </div>
-
-                <ul class="nav-links">
+            
+                <!-- Navigation links for desktop view -->
+                <ul class="nav-links-desktop">
                     <li><a href="#">Feature</a></li>
                     <li><a href="#">Solutions</a></li>
                     <li><a href="#">Company</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="nav-buttons">
+                
+                <!-- Buttons for desktop view -->
+                <div class="nav-buttons-desktop">
                     <button>Login</button>
-                    <button>Sign up</button>
+                    <button>Sign Up</button>
+                </div>
+                
+                <!-- Hamburger menu for mobile -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="assets/Layer 2.svg" alt="Hamburger Icon">
+                </label>
+                
+                <!-- Mobile menu -->
+                <div class="mobile-menu">
+                    <button class="close-menu" onclick="document.getElementById('menu-toggle').checked = false;">
+                        &times;
+                    </button>
+                    
+                    <ul class="nav-links-mobile">
+                        <li><a href="#">Feature</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-buttons-mobile">
+                        <button>Login</button>
+                        <button>Sign Up</button>
+                    </div>
                 </div>
             </nav>
         </header>
